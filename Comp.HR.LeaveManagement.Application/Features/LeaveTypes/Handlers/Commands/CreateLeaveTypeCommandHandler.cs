@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using Comp.HR.LeaveManagement.Application.DTOs.LeaveType.Validators;
+using Comp.HR.LeaveManagement.Application.Exceptions;
 using Comp.HR.LeaveManagement.Application.Features.LeaveTypes.Requests.Commands;
 using Comp.HR.LeaveManagement.Application.Persistence.Contracts;
 using Comp.HR.LeaveManagement.Domain;
@@ -26,7 +27,7 @@ namespace Comp.HR.LeaveManagement.Application.Features.LeaveTypes.Handlers.Comma
             var validationResult = await validator.ValidateAsync(request.LeaveTypeDto, cancellationToken);
 
             if (validationResult.IsValid == false)
-                throw new Exception();
+                throw new ValidationException(validationResult);
 
             var leaveType = _mapper.Map<LeaveType>(request.LeaveTypeDto);
 
