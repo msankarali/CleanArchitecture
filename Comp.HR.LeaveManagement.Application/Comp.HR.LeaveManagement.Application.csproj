@@ -17,6 +17,7 @@
   <ItemGroup>
     <Folder Include="DTOs\Common\" />
     <Folder Include="Features\LeaveAllocations\Handlers\Queries\" />
+    <Folder Include="Responses\" />
   </ItemGroup>
 
 </Project>
