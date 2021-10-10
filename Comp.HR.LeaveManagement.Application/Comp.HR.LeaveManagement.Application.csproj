@@ -15,8 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Contracts\Infrastructure\" />
     <Folder Include="DTOs\Common\" />
     <Folder Include="Features\LeaveAllocations\Handlers\Queries\" />
+    <Folder Include="Models\" />
     <Folder Include="Responses\" />
   </ItemGroup>
 
