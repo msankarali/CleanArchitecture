@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
+using Comp.HR.LeaveManagement.Application.Contracts.Persistence;
 using Comp.HR.LeaveManagement.Application.DTOs.LeaveAllocation.Validators;
 using Comp.HR.LeaveManagement.Application.Features.LeaveAllocations.Requests.Commands;
-using Comp.HR.LeaveManagement.Application.Persistence.Contracts;
 using Comp.HR.LeaveManagement.Domain;
 using MediatR;
 using ValidationException = Comp.HR.LeaveManagement.Application.Exceptions.ValidationException;

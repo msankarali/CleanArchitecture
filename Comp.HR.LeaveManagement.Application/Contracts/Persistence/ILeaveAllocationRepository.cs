@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Comp.HR.LeaveManagement.Domain;
 
-namespace Comp.HR.LeaveManagement.Application.Persistence.Contracts
+namespace Comp.HR.LeaveManagement.Application.Contracts.Persistence
 {
     public interface ILeaveAllocationRepository : IGenericRepository<LeaveAllocation>
     {

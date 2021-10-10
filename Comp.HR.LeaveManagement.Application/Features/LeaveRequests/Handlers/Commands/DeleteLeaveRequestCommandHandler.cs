@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
+using Comp.HR.LeaveManagement.Application.Contracts.Persistence;
 using Comp.HR.LeaveManagement.Application.Exceptions;
 using Comp.HR.LeaveManagement.Application.Features.LeaveRequests.Requests.Commands;
-using Comp.HR.LeaveManagement.Application.Persistence.Contracts;
 using Comp.HR.LeaveManagement.Domain;
 using MediatR;
 

@@ -1,4 +1,4 @@
-﻿using Comp.HR.LeaveManagement.Application.Persistence.Contracts;
+﻿using Comp.HR.LeaveManagement.Application.Contracts.Persistence;
 using FluentValidation;
 
 namespace Comp.HR.LeaveManagement.Application.DTOs.LeaveRequest.Validators
